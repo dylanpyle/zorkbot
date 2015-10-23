@@ -1,0 +1,15 @@
+{
+  "name": "zorkbot",
+  "version": "0.1.0",
+  "description": "A choose-your-own-adventure engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "$(npm bin)/mocha test.js"
+  },
+  "author": "Dylan Pyle <me@dylanpyle.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  }
+}
