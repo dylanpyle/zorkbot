@@ -1,6 +1,6 @@
 # zorkbot
 
-You have been eaten by a grue.
+You are likely to be eaten by a grue.
 
 Zorkbot is a choose-your-own-adventure engine for node.js.
 
