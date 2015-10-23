@@ -1,5 +1,7 @@
 'use strict';
 const Zorkbot = require('./zorkbot');
+const Promise = require('bluebird');
+
 require('chai').should();
 
 const TEST_PLACES = {

@@ -1,5 +1,7 @@
 'use strict';
 
+const Promise = require('bluebird');
+
 module.exports = class Zorkbot {
   // Instantiate a new Zorkbot
   //

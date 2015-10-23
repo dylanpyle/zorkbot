@@ -14,5 +14,8 @@
     "babel": "^5.8.23",
     "chai": "^3.4.0",
     "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "bluebird": "^2.10.2"
   }
 }
