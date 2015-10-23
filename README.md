@@ -31,7 +31,7 @@ const bot = new Zorkbot(PLACES, 'clearing');
 bot.getPrompt()
   .then((prompt) => console.log(prompt)); // You are in ...
 
-bot.handleResponse('east')
+bot.handleResponse('west')
   .then(() => bot.getPrompt())
   .then((prompt) => console.log(prompt)); // This is a dimly lit...
 ```
