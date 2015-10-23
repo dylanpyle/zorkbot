@@ -5,7 +5,8 @@ require('chai').should();
 const TEST_PLACES = {
   first: {
     getPrompt(state) {
-      return 'There is a small mailbox here.';
+      const mailboxSize = state.mailboxSize || 'small';
+      return `There is a ${mailboxSize} mailbox here.`;
     },
 
     handleResponse(response, state) {
@@ -51,6 +52,14 @@ describe('Zorkbot', () => {
     return bot.getPrompt()
       .then((prompt) =>
         prompt.should.equal('There is a small mailbox here.')
+      );
+  });
+
+  it('accepts an initial state object', () => {
+    const newBot = new Zorkbot(TEST_PLACES, 'first', { mailboxSize: 'large' });
+    return newBot.getPrompt()
+      .then((prompt) =>
+        prompt.should.equal('There is a large mailbox here.')
       );
   });
 
